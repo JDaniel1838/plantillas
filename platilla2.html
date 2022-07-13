@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Platilla</title>
+   </head> 
+   <body>
+
+    <!--Nav-Bar-->
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+            <span class="text2xl font-semibold cursor-pointer">
+                <img class="h-10 inline" src="img/logo_lab.png" alt="">
+                Laboratorio Express
+            </span>
+
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul class="md:flex md:items-center z-[-1] md:z-auto 
+        md:static absolute w-full left-0 md:w-auto 
+        md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl inline-block bg-green-500 rounded shadow-xl shadow-green-200 hover:text-white duration-500 ease-in-out transform hover:scale-105">INICIO</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl inline-block bg-green-500 rounded shadow-xl shadow-green-200  hover:text-white duration-500 ease-in-out transform hover:scale-105">SERVICIOS</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl inline-block bg-green-500 rounded shadow-xl shadow-green-200 hover:text-white duration-500 ease-in-out transform hover:scale-105">CONTACTO</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl inline-block bg-green-500 rounded shadow-xl shadow-green-200 hover:text-white duration-500 ease-in-out transform hover:scale-105">UBICACION</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Slider-->
+    <section class="flex gap-4 p-4 w-full snap-x overflow-x-auto">
+
+        <div class="snap-center shrink-0 w-4/5 rounded overflow-hidden shadow-lg">
+            <img class="aspect-video object-cover" src="img/img_1.jpg" alt="">    
+        </div>
+        <div class="snap-center shrink-0 w-4/5 rounded overflow-hidden shadow-lg">
+            <img class="aspect-video object-cover" src="img/img-3.jpg" alt="">
+        </div>
+        <div class="snap-center shrink-0 w-4/5 rounded overflow-hidden shadow-lg">
+            <img class="aspect-video object-cover" src="img/img-4.jpg" alt="">
+        </div>
+    </section>
+
+    <h1 class="mt-16 text-center font-semibold text-5xl text-green-600">Nuestros Servicios</h1>
+
+    <div class="container p-12 mx-auto grid grid-cols-3 justify-center">
+
+        <div class="bg-green-600 m-3 p-12  rounded-md font-bold text-white">
+            <img class="ml-16" src="icons/estudio_1.png " alt="">
+            <div class="bg-green-600 w-full rounded text-center mt-5"> 
+                BIOQUÍMICA CLÍNICA
+                <button class="bg-green-500 rounded-full shadow-sm text-black text-center w-48 mt-5 hover:text-white duration-500 ease-in-out transform hover:scale-105"> Todos los estudios</button>   
+            </div>
+        </div>
+
+        <div class="bg-green-600 m-3 p-12  rounded-md font-bold text-white">
+            <img class="ml-16" src="icons/estudio_2.png " alt="">
+            <div class="bg-green-600 w-full rounded text-center mt-5"> 
+                HEMATOLOGÍA Y COAGULACIÓN
+                <button class="bg-green-500 rounded-full shadow-sm text-black text-center w-48 mt-5 hover:text-white duration-500 ease-in-out transform hover:scale-105">Todos los estudios</button>
+            </div>
+        </div>
+
+        <div class="bg-green-600 m-3 p-12 rounded-md font-bold text-white">
+            <img class="ml-16" src="icons/estudio_3.png" alt="">
+            <div class="bg-green-600 w-full rounded text-center mt-5">
+                INMUNOLOGÍA
+                <button class="bg-green-500 rounded-full shadow-sm text-black text-center w-48 mt-5 hover:text-white duration-500 ease-in-out transform hover:scale-105">Todos los estudios</button>
+            </div>
+        </div>
+        
+        <div class="bg-green-600 m-3 p-12 rounded-md font-bold text-white ">
+            <img class="ml-20 w-24" src="icons/estudio_4.png" alt="">
+            <div class="bg-green-600 w-full rounded text-center mt-4">
+                HORMONAS Y MARCADORES TUMURALES
+                <button class="bg-green-500 rounded-full shadow-sm text-black text-center w-48 mt-5 hover:text-white duration-500 ease-in-out transform hover:scale-105">Todos los estudios</button>
+            </div>
+        </div>
+
+        <div class="bg-green-600 m-3 p-12  rounded-md font-bold text-white">
+                <img class="ml-16" src="icons/estudio_5.png" alt=""> 
+            <div class="bg-green-600 w-full rounded text-center mt-3">
+                MICROBIOLOGÍA
+                <button class="bg-green-500 rounded-full shadow-sm text-black text-center w-48 mt-4 hover:text-white duration-500 ease-in-out transform hover:scale-105">Todos los estudios</button>
+            </div>
+        </div>
+
+        <div class="bg-green-600 m-3 p-12  rounded-md font-bold text-white">
+                <img class="ml-16" src="icons/estudio_6.png" alt="">
+            <div class="bg-green-600 w-full rounded text-center mt-3">
+                ORINA Y COPROS
+                <button class="bg-green-500 rounded-full shadow-sm text-black text-center w-48 mt-4 hover:text-white duration-500 ease-in-out transform hover:scale-105">Todos los estudios</button>
+            </div>
+        </div>
+        
+        <div class="bg-green-600 m-3 p-12  rounded-md font-bold text-white">
+                <img class="ml-16" src="icons/estudio_7.png" alt="">
+                <div class="bg-green-600 w-full rounded text-center mt-3"> 
+                PRUEBAS FUNCIONALES
+                <button class="bg-green-500 rounded-full shadow-sm text-black text-center w-48 mt-4 hover:text-white duration-500 ease-in-out transform hover:scale-105">Todos los estudios</button>
+            </div>
+        </div>
+
+        <div class="bg-green-600 m-3 p-12  rounded-md font-bold text-white"> 
+                <img class="ml-16" src="icons/estudio_8.png" alt="">
+                <div class="bg-green-600 w-full rounded text-center mt-3">
+                ESTUDIOS VARIOS
+                <button class="bg-green-500 rounded-full shadow-sm text-black text-center w-48 mt-4 hover:text-white duration-500 ease-in-out transform hover:scale-105">Todos los estudios</button>
+            </div>
+        </div>
+
+        <div class="bg-green-600 m-3 p-12  rounded-md font-bold text-white">
+                <img class="ml-16" src="icons/estudio_9.png" alt=""> 
+                <div class="bg-green-600 w-full rounded text-center mt-3">
+                ELECTROLITOS
+                <button class="bg-green-500 rounded-full shadow-sm text-black text-center w-48 mt-4 hover:text-white duration-500 ease-in-out transform hover:scale-105">Todos los estudios</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-green-600 text-center mb-10">
+        <h2 class="font-bold text-3xl mt-10">VISITA NUESTRAS SUCURSALES</h2>
+        <section class="grid grid-cols-2 gap-10">
+        <div class="text-green-600 font-bold border-2 border-gray-400 shadow-2xl rounded-md ml-10 mt-10">
+            <h2 class="mt-5 text-2xl">DIRECCIÓN</h2>
+            <h3 class="mt-7 text-black">Av. Central #540, Tecamachalco, Puebla</h3>
+            <h2 class="mt-10 text-2xl">HORARIOS DE ATENCIÓN</h2>
+            <h3 class="mt-7 text-black">Lunes a Viernes: 7:00 am - 3:00 pm</h3>
+            <h3 class="mt-7 text-black">Sábado:        7:00 am - 3:00 pm</h3>
+            <h3 class="mt-7 text-black">Domingo: Cerrado</h3>
+            <button href="https://goo.gl/maps/J9KErGpw5E1UFfMSA" class="w-64 h-10 text-white bg-green-500 rounded-full mt-10 mb-10 shadow-3xl">¿Como llegar?
+            </button>
+        </div>
+            
+        <div class="border-4 border-green-500 rounded-xl mt-10 mr-10">
+            <iframe class="w-full h-full border-4 border-green-500 rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30200.825878209736!2d-97.75502598572402!3d18.882500837077142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c563032eb3f617%3A0x611ad9c6ead043fc!2sTecamachalco%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1652541751099!5m2!1ses-419!2smx" frameborder="0"></iframe>
+        </div>
+    </section>
+    </div>
+
+    <section class="bg-gray-900 text-5xl text-center border-y-4 border-y-green-600 text-white ">
+
+            <h2 class="mt-10 font-semibold">CONTACTO</h2>
+            <h3 class="mt-16 font-sans text-2xl">MANDANOS UN MENSAJE</h3>
+
+        <div class="container mt-10">
+            <div class="grid grid-cols-3 gap-10">
+        
+                <section class="box grid grid-cols-1 gap-x-3">
+
+                <div class="bg-gray-900 text-white ml-19 rounded-sm h-5 mr-22">
+                    <button class="rounded-full bg-green-600 mt-8 text-3xl shadow-md shadow-green-500 ">+1023 4567 8910</button>
+                </div>
+
+                <div class="bg-gray-900 text-white ml-16 rounded-sm w-22 mt-10">
+                    <button class="rounded-full bg-green-600 mt-8 text-3xl shadow-md shadow-green-500 ">laboratirioschile@gmail.com</button>
+                </div>
+
+                <div class="bg-gray-900 text-white ml-19 rounded-sm w-82 mr-22 mb-20">
+                    <button class="rounded-full bg-green-600 mt-8 text-3xl shadow-md shadow-green-500 ">Av. Central #540</button>
+                </div>
+                </section>
+                
+                <div class="w-full max-w-xs text-white rounded ml-20">
+                    <form class=" shadow-xl rounded px-8 pt-6 pb-8 mb-4 bg-green-600">
+                      <div class="mb-4">
+                        <label class="block text-sm font-bold mb-2" for="username">
+                          Nombre Completo
+                        </label>
+                        <input class="shadow-xl appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline text-base" id="username" type="text">
+                      </div>
+
+                      <div class="mb-6">
+                        <label class="block text-white text-sm font-bold mb-2" for="email">
+                          Correo Electronico
+                        </label>
+                        <input class="shadow-xl appearance-none border rounded w-full py-2 px-10 text-gray-900 mb-3 leading-tight focus:outline-none focus:shadow-outline text-sm" id="email" type="email" >
+                      </div>
+
+                      <div class="mb-8">
+                        <label class="block text-white text-sm font-bold mb-2" for="username" >
+                          Mensaje
+                        </label>
+                        <input class="shadow-xl appearance-none border rounded w-full py-4 px-10 text-gray-900 leading-tight focus:outline-none focus:shadow-outline text-sm" id="username" type="text" placeholder="Escribe tu mensaje">
+                      </div>
+
+                      <div class="flex items-center justify-center text-2xl">
+                        <button class="bg-green-700 shadow-xl text-black font-bold py-2 px-4 rounded-full focus:outline-none" type="button">
+                          Enviar
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+
+                <div class="drop-shadow-2xl shadow-black items-center">
+                    <img class="w-auto h-auto " src="img/paper-plane.png" alt=""/>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    
+    <div class="bg-gray-900 text-white text-center text-xl border-y-4 border-green-600">
+        <div class="font-semibold text-2xl">
+            <h2 class="mt-10">Laboratorio Chile</h2>
+        </div>
+        <h3 class="mt-10">Sobre nosotros</h3>
+        <p class="mt-10 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente magnam voluptatem officia aliquid aliquam,
+        rem voluptas repudiandae praesentium cum alias nihil molestiae maiores, doloremque autem. Molestiae quo aut autem qui?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum reiciendis voluptatum pariatur incidunt tenetur a minima 
+        reprehenderit accusantium! Ab ea, deleniti ipsam necessitatibus sapiente nesciunt voluptatibus impedit numquam fugit.</p>
+
+        <section class="box flex w-80 justify-between ml-5">
+        
+        <div class="bg-green-600 rounded-full p-6 mb-10">
+            <button>
+                <img class="w-10" src="icons/instagram.svg" alt="">
+            </button>
+        </div>
+
+        <div class="bg-green-600 rounded-full p-6 mb-10">
+            <button>
+                <img class="w-10" src="icons/facebook.svg" alt="">
+            </button>
+        </div>
+
+        <div class="bg-green-600 rounded-full p-6 mb-10">
+            <button>
+                <img class="w-10" src="icons/whatsapp.svg" alt="">
+            </button>
+        </div>
+
+        </section>
+        <div class="mb-10">
+            <a href="" class="mr-20">Politica de privacidad</a>
+            <a href="" class="mr-20">Aviso legal</a>
+            <a href="">Ayuda</a>
+            <a href="">Servicios</a>
+         </div>
+    </div>
+
+    
+    </div>
+
+    <footer class="bg-black text-white text-center h-10 ">
+        <h2 class=" font-semibold text-3xl">Laboratorio Chile SA D.C.V</h2>
+    </footer>
+
+    <script>
+        function Menu(s){
+            let list = document.querySelector('ul');
+
+            s.name === 'menu' ? (s.name = "close", list.classList.add('top-[80px]'),
+            list.classList.add('opacity-100')
+            ) :( s.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+        }
+    </script>
+   </body>
+</html>
